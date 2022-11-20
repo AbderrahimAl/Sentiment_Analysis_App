@@ -1,0 +1,7 @@
+version: '1'
+services:
+  sentiment_api:
+    build: .
+    container_name: 'bert_app'
+    ports:
+      - '8000:8000'
