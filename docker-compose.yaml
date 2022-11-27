@@ -1,7 +1,7 @@
 version: '1'
 services:
   sentiment_api:
-    build: .
+    image: bert_app:1.0
     container_name: 'bert_app'
     ports:
       - '8000:8000'
