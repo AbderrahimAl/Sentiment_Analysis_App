@@ -11,7 +11,7 @@ def prepare_input(review, tokenizer=tokenizer, max_len=max_len):
     """
     inputs = tokenizer.encode_plus(
         review,
-        max_lenght=max_len,
+        max_length=max_len,
         add_special_tokens=True
     )
     padding_length = max_len - len(inputs['input_ids'])
