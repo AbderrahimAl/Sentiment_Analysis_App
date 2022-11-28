@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/sentiment_app:${{ github.run_id }
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/sentiment_app:${{ github.run_id }}
     
     - name: Push the Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/sentiment_app:${{ github.run_id }
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/sentiment_app:${{ github.run_id }}
       
