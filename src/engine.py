@@ -1,4 +1,4 @@
-from model import SentimentClassifier
+from .model import SentimentClassifier
 from tqdm import tqdm
 import torch
 from torch import nn

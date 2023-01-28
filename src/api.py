@@ -1,6 +1,6 @@
 import torch
-import config
-from model import SentimentClassifier
+from . import config
+from .model import SentimentClassifier
 from fastapi import FastAPI
 
 tokenizer = config.TOKENIZER

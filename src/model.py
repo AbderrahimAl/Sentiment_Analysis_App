@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from transformers import BertModel
-import config
+from . import config
 
 class SentimentClassifier(nn.Module):
     def __init__(self) -> None:

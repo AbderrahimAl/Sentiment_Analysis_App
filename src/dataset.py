@@ -1,6 +1,6 @@
 from torch.utils.data import Dataset
+from . import config
 import pandas as pd
-import config
 import torch
 
 class SentimentAnalysisDataset(Dataset):

@@ -1,11 +1,11 @@
-import config
 import pandas as pd
 import dataset
-import engine
+from . import config
+from . import engine
 import torch
 import numpy as np
 from transformers import AdamW, get_linear_schedule_with_warmup
-from model import SentimentClassifier
+from .model import SentimentClassifier
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
